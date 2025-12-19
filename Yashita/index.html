@@ -1,48 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Will You Marry Me?</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>But.. I Love You</title>
+    <link rel="icon" href="Pages/Assets/logo.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="firstPage.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="bg"></div>
-
-  <main class="container">
-    <div class="card">
-      <h1 class="title">A Question For You</h1>
-      <p class="subtitle">I made something special… will you see it?</p>
-      <div class="photo-wrap">
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=60" alt="memory"/>
-      </div>
-      <div class="controls">
-        <button id="openBtn" class="cta">Open</button>
-        <button id="audioToggle" class="audio-toggle" title="Toggle ambient sound">🔊</button>
-      </div>
-
-      <div class="mystery-card" aria-hidden="true">
-        <p class="hint">A whisper: click the moon to begin the story...</p>
-        <button id="mysteryBtn" class="mystery-btn">🌙</button>
-        <div id="mysteryText" class="mystery-text" aria-live="polite"></div>
-      </div>
+    <div class="container">  
+        <img id="image" src="Pages/Assets/sad.gif" >     
+        <button type="button" class="btn btn-danger" id="hover" onclick = "myFunction()" onmouseover="ChangeImage('hi'); bg();" onmouseout="ResetImage(); resetBG();">
+            <span>Hello &#128532;</span>
+        </button>
     </div>
-  </main>
-
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <h2>Will you marry me?</h2>
-      <p class="modal-note">Say Yes and let's make a lifetime of adventures together.</p>
-      <div class="modal-actions">
-        <button id="yesBtn" class="yes">Yes 💍</button>
-        <button id="noBtn" class="no">Not yet</button>
-      </div>
+    <div class="watermark">
+        Made by BALRAM❣️
     </div>
-  </div>
-
-  <canvas id="confetti"></canvas>
-  <canvas id="stars"></canvas>
-
-  <script src="script.js"></script>
-</body>
+    
+    <script src="firstPage.js"></script>  
+</body> 
 </html>
