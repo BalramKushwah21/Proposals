@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Will You Marry Me?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="container">
+    <div class="card">
+      <h1 class="title">A Question For You</h1>
+      <p class="subtitle">I made something special… will you see it?</p>
+      <div class="photo-wrap">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=60" alt="memory"/>
+      </div>
+      <div class="controls">
+        <button id="openBtn" class="cta">Open</button>
+        <button id="audioToggle" class="audio-toggle" title="Toggle ambient sound">🔊</button>
+      </div>
+
+      <div class="mystery-card" aria-hidden="true">
+        <p class="hint">A whisper: click the moon to begin the story...</p>
+        <button id="mysteryBtn" class="mystery-btn">🌙</button>
+        <div id="mysteryText" class="mystery-text" aria-live="polite"></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h2>Will you marry me?</h2>
+      <p class="modal-note">Say Yes and let's make a lifetime of adventures together.</p>
+      <div class="modal-actions">
+        <button id="yesBtn" class="yes">Yes 💍</button>
+        <button id="noBtn" class="no">Not yet</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <canvas id="stars"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
