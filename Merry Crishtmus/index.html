@@ -12,11 +12,29 @@
     <div class="lights"></div>
     <main class="card">
       <h1 class="title">Merry Christmas</h1>
-      <p class="subtitle">Wishing you a lovely, romantic holiday filled with warmth and hearts.</p>
+      <p class="subtitle">May your heart feel light, your home feel warm, and your days be filled with quiet joy and love. 🎄✨</p>
       <button id="sendLove" class="btn">Send a Heart</button>
       <div class="note">Click anywhere to create floating hearts.</div>
     </main>
     <div id="hearts" aria-hidden="true"></div>
+  
+    <div id="giftModal" class="modal" aria-hidden="true">
+      <div class="modal-overlay" id="giftOverlay"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="giftTitle">
+        <div class="gift" id="giftBox">
+          <div class="lid"></div>
+          <div class="box">
+            <img id="giftImage" src="assets/Yashita.png" alt="A little gift" />
+          </div>
+          <div class="ribbon"></div>
+        </div>
+        <h2 id="giftTitle">A little gift for you</h2>
+        <p class="gift-text">May this bring a warm smile and extra love today.</p>
+        <div class="gift-actions">
+          <button id="closeGift" class="btn">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
